@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FFFFFF"
+    android:padding="0dp"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/AddCarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/gradient_background_popup"
+        android:orientation="horizontal"
+        android:padding="0dp"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/carNameEditText"
+            style="@style/Widget.AppCompat.EditText"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="56dp"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_rounded_corners"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="textPersonName"
+            android:maxLength="10"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:shadowColor="#000000"
+            android:shadowRadius="0"
+            android:textAlignment="inherit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textColorHint="#707070"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/ValiderAddCarButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/CarNumberEditText" />
+
+        <TextView
+            android:id="@+id/addCarTextView2"
+            android:layout_width="246dp"
+            android:layout_height="55dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Nom du Vehicule"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textColorHint="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.46" />
+
+        <Button
+            android:id="@+id/ValiderAddCarButton"
+
+            android:layout_width="200dp"
+            android:layout_height="0dp"
+
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/button_rounded_corners"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="0dp"
+            android:shadowColor="#000000"
+            android:shadowRadius="0"
+            android:text="Valider"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="visible"
+            app:backgroundTint="@color/dark_green"
+            app:backgroundTintMode="src_in"
+            app:elevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carNameEditText" />
+
+        <EditText
+            android:id="@+id/CarNumberEditText"
+            style="@style/Widget.AppCompat.EditText"
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="54dp"
+            android:layout_marginBottom="54dp"
+            android:autofillHints=""
+            android:background="@drawable/edit_text_rounded_corners"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="number"
+            android:maxLength="10"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:shadowColor="#000000"
+            android:shadowRadius="0"
+            android:textAlignment="inherit"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textColorHint="#707070"
+            android:textSize="24sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/carNameEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/AddCarTextView"
+            android:layout_width="246dp"
+            android:layout_height="55dp"
+            android:layout_marginBottom="32dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Code du Vehicule"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textColorHint="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/CarNumberEditText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
